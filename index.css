@@ -1,0 +1,132 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto hace que el cuerpo ocupe el 100% del alto de la ventana */
+  background-color: rgb(7, 12, 53);
+}
+
+#tittle-h1{
+  margin: 0;
+  display: flex ;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-family: "Anta", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 2rem;
+}
+#main-cotainer {
+  background-color: rgb(205, 205, 205);
+  margin: 3rem;
+  margin-top: 6rem;
+  height: 32rem; /* Cambiado a auto para adaptarse al contenido */
+  width: 60rem;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-direction: column; /* Para centrar el contenido verticalmente */
+  align-items: center;
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.info {
+  display: none;
+  background-color: rgb(65, 65, 65);
+}
+
+#form {
+  background-color: rgb(141, 139, 139);
+  border-radius: 0.5rem;
+  display: block;
+  align-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin: 0 auto;
+  height: 4rem;
+  width: 16rem;
+  padding: 0.5rem;
+  
+}
+
+#form-btn{
+  cursor: pointer;
+}
+
+
+#list {
+  padding: .2rem;
+  border-radius: 0.8rem;
+  height: 15rem;
+  overflow: auto;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.edit-icon,
+.delete-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(141, 139, 139);
+  margin: 0 auto;
+  justify-content: center;
+  overflow: auto;
+}
+
+.form-input {
+  outline: none;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.correct,
+.correct:focus {
+  outline: 2px solid rgb(0, 255, 0);
+}
+
+.incorrect,
+.incorrect:focus {
+  outline: 2px solid red;
+}
+
+.show {
+  display: flex;
+}
+
+@media (min-width: 768px){
+  #tittle-h1{
+    font-size: 4rem;
+  }
+  #main-container{
+    font-size: 3rem;
+  }
+  #form{
+    width: 25rem;
+  }
+}
